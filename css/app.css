@@ -1,23 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+div.title {
+  display: flex;
+  margin: 30px;
+}
+
+div.title img {
+  height: 40px;
+}
+
+h1 {
+  margin: 0 10px;
+  padding: 0;
+  color: #006BB8;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 #app {
   display: flex;
+  margin: 30px;
 }
 
 #team-list {
-  height: 600px;
-  min-width: 250px;
+  height: 550px;
+  width: 250px;
   overflow: auto;
 }
 
 #team-list option {
+  font-weight: bold;
   padding: 1em;
+  padding-left: calc(1em + 30px);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  background-size: 30px;
+}
+
+#team-list option:hover {
+  background-color: #e6f7ff;
 }
 
 #player-list {
-  height: 600px;
-  min-width: 250px;
+  height: 550px;
+  width: 300px;
   overflow: auto;
 }
 
 #player-list option {
-  padding: 1em;
+  font-weight: bold;
+  padding: 2em;
+  padding-left: calc(2em + 50px);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  background-size: 50px;
+}
+
+#player-list option:hover {
+  background-color: #e6f7ff;
+}
+
+footer {
+  margin: 20px;
+  text-align: right;
+  font-family: arial;
 }

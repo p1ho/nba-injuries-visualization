@@ -1,6 +1,8 @@
 var injuryData
 Vue.http.get('https://p1ho.github.io/nba-injuries/nba-injuries.json').then(res => {
   injuryData = res.body
+  let updated = Date(injuryData.updated).split(' ').slice(0, 4)
+  document.getElementById('updated').textContent = `Updated ${ updated }`
 })
 
 var injuryLookup
@@ -71,7 +73,6 @@ const playerList = new Vue({
       }
 
       for (let [locKey, injuries] of Object.entries(byLocation)) {
-        console.log(injuries)
         let coord = locKey.split(' ')
         if (locKey.includes('-')) {
           var x = [-.5, parseFloat(coord[0])]
@@ -142,5 +143,15 @@ const teamList = new Vue({
 })
 
 Vue.http.get('/js/teams.json').then(res => {
-  teamList.teams = Object.entries(res.body)
+  const capitalize = str => {
+    let strSplit = str.toLowerCase().split(' ')
+    return strSplit.map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(' ')
+  }
+  let sortedTeams = Object.entries(res.body).sort((a, b) => {
+    return a[1].name[0] - b[1].name[0]
+  })
+  for (entry of sortedTeams) {
+    entry[1].name = capitalize(entry[1].name)
+    teamList.teams.push(entry)
+  }
 })
