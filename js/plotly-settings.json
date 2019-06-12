@@ -1,7 +1,7 @@
 {
   "layout": {
-    "width": 1000,
-    "height": 600,
+    "width": 900,
+    "height": 550,
     "showlegend": false,
   	"images": [{
   		"source": "/image/human.png",
@@ -29,7 +29,7 @@
   		"showline": false,
   		"dtick": 0.1,
   		"showticklabels": false,
-  		"range": [-2, 2]
+  		"range": [-2.5, 2]
   	},
   	"yaxis": {
   		"autorange": false,
@@ -52,7 +52,7 @@
     "hoverinfo": "none"
   },
   "trace-extra": {
-    "x": [-1.9],
+    "x": [-2.4],
     "y": [2.7],
     "mode": "text",
     "text": ["<b>No Injuries</b>"],
