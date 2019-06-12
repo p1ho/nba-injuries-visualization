@@ -1,0 +1,23 @@
+#app {
+  display: flex;
+}
+
+#team-list {
+  height: 600px;
+  min-width: 250px;
+  overflow: auto;
+}
+
+#team-list option {
+  padding: 1em;
+}
+
+#player-list {
+  height: 600px;
+  min-width: 250px;
+  overflow: auto;
+}
+
+#player-list option {
+  padding: 1em;
+}

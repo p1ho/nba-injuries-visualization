@@ -1,0 +1,64 @@
+{
+  "layout": {
+    "width": 1000,
+    "height": 600,
+    "showlegend": false,
+  	"images": [{
+  		"source": "/image/human.png",
+      "xref": "x",
+      "yref": "y",
+  		"x": -0.5,
+  		"y": 2.6,
+  		"sizex": 1,
+  		"sizey": 2.6,
+  		"sizing": "stretch",
+  		"opacity": 1,
+  		"layer": "below"
+  	}],
+    "margin": {
+      "l": 10,
+      "r": 10,
+      "b": 10,
+      "t": 10,
+      "pad": 0
+    },
+  	"xaxis": {
+  		"autorange": false,
+  		"showgrid": false,
+  		"zeroline": false,
+  		"showline": false,
+  		"dtick": 0.1,
+  		"showticklabels": false,
+  		"range": [-2, 2]
+  	},
+  	"yaxis": {
+  		"autorange": false,
+  		"showgrid": false,
+  		"zeroline": false,
+  		"showline": false,
+  		"dtick": 0.1,
+  		"showticklabels": false,
+  		"range": [-0.3, 2.8]
+  	}
+  },
+  "options": {
+    "staticPlot": true,
+    "displayModeBar": false
+  },
+  "trace-base": {
+    "mode": "lines+markers+text",
+    "line": { "width": 2 },
+    "showlegend": false,
+    "hoverinfo": "none"
+  },
+  "trace-extra": {
+    "x": [-1.9],
+    "y": [2.7],
+    "mode": "text",
+    "text": ["<b>No Injuries</b>"],
+    "textposition": "bottom right",
+    "line": { "width": 0 },
+    "showlegend": false,
+    "hoverinfo": "none"
+  }
+}
