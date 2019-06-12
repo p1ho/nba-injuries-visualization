@@ -1,122 +1,152 @@
 {
   "celtics": {
     "name": "BOSTON CELTICS",
-    "roster-url": "https://www.foxsports.com/nba/boston-celtics-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/boston-celtics-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/BOS.svg"
   },
   "nets": {
     "name": "BROOKLYN NETS",
-    "roster-url": "https://www.foxsports.com/nba/brooklyn-nets-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/brooklyn-nets-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/BKN.svg"
   },
   "knicks": {
     "name": "NEW YORK KNICKS",
-    "roster-url": "https://www.foxsports.com/nba/new-york-knicks-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/new-york-knicks-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/NYK.svg"
   },
   "76ers": {
     "name": "PHILADELPHIA 76ERS",
-    "roster-url": "https://www.foxsports.com/nba/philadelphia-76ers-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/philadelphia-76ers-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/PHI.svg"
   },
   "raptors": {
     "name": "TORONTO RAPTORS",
-    "roster-url": "https://www.foxsports.com/nba/toronto-raptors-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/toronto-raptors-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/TOR.svg"
   },
   "bulls": {
     "name": "CHICAGO BULLS",
-    "roster-url": "https://www.foxsports.com/nba/chicago-bulls-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/chicago-bulls-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/CHI.svg"
   },
   "cavaliers": {
     "name": "CLEVELAND CAVALIERS",
-    "roster-url": "https://www.foxsports.com/nba/cleveland-cavaliers-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/cleveland-cavaliers-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/CLE.svg"
   },
   "pistons": {
     "name": "DETROIT PISTONS",
-    "roster-url": "https://www.foxsports.com/nba/detroit-pistons-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/detroit-pistons-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/DET.svg"
   },
   "pacers": {
     "name": "INDIANA PACERS",
-    "roster-url": "https://www.foxsports.com/nba/indiana-pacers-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/indiana-pacers-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/IND.svg"
   },
   "bucks": {
     "name": "MILWAUKEE BUCKS",
-    "roster-url": "https://www.foxsports.com/nba/milwaukee-bucks-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/milwaukee-bucks-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/MIL.svg"
   },
   "hawks": {
     "name": "ATLANTA HAWKS",
-    "roster-url": "https://www.foxsports.com/nba/atlanta-hawks-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/atlanta-hawks-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/ATL.svg"
   },
   "hornets": {
     "name": "CHARLOTTE HORNETS",
-    "roster-url": "https://www.foxsports.com/nba/charlotte-hornets-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/charlotte-hornets-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/CHA.svg"
   },
   "heat": {
     "name": "MIAMI HEAT",
-    "roster-url": "https://www.foxsports.com/nba/miami-heat-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/miami-heat-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/MIA.svg"
   },
   "magic": {
     "name": "ORLANDO MAGIC",
-    "roster-url": "https://www.foxsports.com/nba/orlando-magic-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/orlando-magic-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/ORL.svg"
   },
   "wizards": {
     "name": "WASHINGTON WIZARDS",
-    "roster-url": "https://www.foxsports.com/nba/washington-wizards-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/washington-wizards-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/WAS.svg"
   },
   "warriors": {
     "name": "GOLDEN STATE WARRIORS",
-    "roster-url": "https://www.foxsports.com/nba/golden-state-warriors-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/golden-state-warriors-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/GSW.svg"
   },
   "clippers": {
     "name": "LOS ANGELES CLIPPERS",
-    "roster-url": "https://www.foxsports.com/nba/los-angeles-clippers-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/los-angeles-clippers-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/LAC.svg"
   },
   "lakers": {
     "name": "LOS ANGELES LAKERS",
-    "roster-url": "https://www.foxsports.com/nba/los-angeles-lakers-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/los-angeles-lakers-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/LAL.svg"
   },
   "suns": {
     "name": "PHOENIX SUNS",
-    "roster-url": "https://www.foxsports.com/nba/phoenix-suns-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/phoenix-suns-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/PHX.svg"
   },
   "kings": {
     "name": "SACRAMENTO KINGS",
-    "roster-url": "https://www.foxsports.com/nba/sacramento-kings-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/sacramento-kings-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/SAC.svg"
   },
   "mavericks": {
     "name": "DALLAS MAVERICKS",
-    "roster-url": "https://www.foxsports.com/nba/dallas-mavericks-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/dallas-mavericks-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/DAL.svg"
   },
   "rockets": {
     "name": "HOUSTON ROCKETS",
-    "roster-url": "https://www.foxsports.com/nba/houston-rockets-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/houston-rockets-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/HOU.svg"
   },
   "grizzlies": {
     "name": "MEMPHIS GRIZZLIES",
-    "roster-url": "https://www.foxsports.com/nba/memphis-grizzlies-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/memphis-grizzlies-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/MEM.svg"
   },
   "pelicans": {
     "name": "NEW ORLEANS PELICANS",
-    "roster-url": "https://www.foxsports.com/nba/new-orleans-pelicans-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/new-orleans-pelicans-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/NOP.svg"
   },
   "spurs": {
     "name": "SAN ANTONIO SPURS",
-    "roster-url": "https://www.foxsports.com/nba/san-antonio-spurs-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/san-antonio-spurs-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/SAS.svg"
   },
   "nuggets": {
     "name": "DENVER NUGGETS",
-    "roster-url": "https://www.foxsports.com/nba/denver-nuggets-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/denver-nuggets-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/DEN.svg"
   },
   "timberwolves": {
     "name": "MINNESOTA TIMBERWOLVES",
-    "roster-url": "https://www.foxsports.com/nba/minnesota-timberwolves-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/minnesota-timberwolves-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/MIN.svg"
   },
   "thunder": {
     "name": "OKLAHOMA CITY THUNDER",
-    "roster-url": "https://www.foxsports.com/nba/oklahoma-city-thunder-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/oklahoma-city-thunder-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/OKC.svg"
   },
   "trail-blazers": {
     "name": "PORTLAND TRAIL BLAZERS",
-    "roster-url": "https://www.foxsports.com/nba/portland-trail-blazers-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/portland-trail-blazers-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/POR.svg"
   },
   "jazz": {
     "name": "UTAH JAZZ",
-    "roster-url": "https://www.foxsports.com/nba/utah-jazz-team-roster"
+    "roster-url": "https://www.foxsports.com/nba/utah-jazz-team-roster",
+    "logo": "https://www.nba.com/assets/logos/teams/primary/web/UTA.svg"
   }
 }
