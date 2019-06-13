@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
+body {
+  display: block;
+  width: 1450px;
+  margin: auto;
+}
+
 div.title {
   display: flex;
   margin: 30px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 div.title img {
@@ -13,17 +20,17 @@ h1 {
   margin: 0 10px;
   padding: 0;
   color: #006BB8;
-  font-family: 'Ubuntu', sans-serif;
 }
 
-#app {
+main {
   display: flex;
   margin: 30px;
 }
 
 #team-list {
-  height: 550px;
+  height: 530px;
   width: 250px;
+  min-width: 250px;
   overflow: auto;
 }
 
@@ -41,8 +48,10 @@ h1 {
 }
 
 #player-list {
-  height: 550px;
+  height: 530px;
   width: 300px;
+  min-width: 300px;
+  margin-right: 50px;
   overflow: auto;
 }
 
@@ -60,7 +69,23 @@ h1 {
 }
 
 footer {
-  margin: 20px;
-  text-align: right;
-  font-family: arial;
+  margin: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#footer-links {
+  float: right;
+  font-size: 2em;
+}
+
+#footer-links a {
+  color: black;
+}
+
+#footer-links a:hover {
+  color: #006BB8;
+}
+
+#footer-links a:active {
+  color: purple;
 }
