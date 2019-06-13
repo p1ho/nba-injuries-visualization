@@ -1,7 +1,7 @@
 "use strict"
 
 var teamListPromise = Promise.all([
-  Vue.http.get('/js/assets/teams.json'),
+  Vue.http.get('./js/assets/teams.json'),
   playerListPromise
 ]).then( values => {
 

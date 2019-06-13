@@ -7,8 +7,8 @@ Notes:
  */
 
 var injugyGraphPromise = Promise.all([
-  Vue.http.get('/js/assets/injury-lookup.json'),
-  Vue.http.get('/js/assets/plotly-settings.json')
+  Vue.http.get('./js/assets/injury-lookup.json'),
+  Vue.http.get('./js/assets/plotly-settings.json')
 ]).then( values => {
 
   const injuryLookup = values[0].body
