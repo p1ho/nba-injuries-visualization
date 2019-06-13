@@ -11,7 +11,7 @@
     "height": 530,
     "showlegend": false,
   	"images": [{
-  		"source": "/image/human.png",
+  		"source": "../image/human.png",
       "xref": "x",
       "yref": "y",
   		"x": -0.5,
