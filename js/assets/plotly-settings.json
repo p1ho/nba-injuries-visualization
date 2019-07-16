@@ -1,11 +1,15 @@
 {
   "layout": {
+    "font": {
+      "family": "Oswald"
+    },
     "title": {
       "font": {
-        "family": "Arial",
-        "size": 25
+        "family": "Anton",
+        "size": 30
       },
-      "x": "0.96"
+      "x": "0.96",
+      "y": "0.95"
     },
     "width": 900,
     "height": 530,

@@ -15,8 +15,8 @@ function createTraces(injuries, injuryLookup, settings) {
   }
 
   for (let injury of injuries) {
-    let injuryName = `<span style="font-size: 16px;">${injury.injury.toLowerCase()}</span>`
-    let injuryDate = `<span style="font-size: 10px;">(${injury.date})</span>`
+    let injuryName = `<span style="font-size: 15px;">${injury.injury.toLowerCase()}</span>`
+    let injuryDate = `<span style="font-family: arial; font-size: 10px;">(${injury.date})</span>`
     let injuryHtmlLeft = injuryName + ' ' + injuryDate
     let injuryHtmlRight = injuryDate + ' ' + injuryName
     let found = false
@@ -63,7 +63,7 @@ function createTraces(injuries, injuryLookup, settings) {
     trace.x = x
     trace.y = y
     trace.text = [
-        '<span style="font-size: 20px;">'
+        '<span style="font-size: 16px;">'
         + '<br>'.repeat(injuries.length-1)
         + injuries.join('<br>')
       + '</span>'
@@ -81,7 +81,7 @@ function createTraces(injuries, injuryLookup, settings) {
     traceUnlisted.text = [
         '<span style="font-weight: bold; font-size: 1.5em;">'
         + '<span style="color: rgb(150, 150, 0);">&#9888;</span> '
-        + 'Vague Injuries:'
+        + 'Vague Injuries'
       + '</span><br><br>'
       + injuriesUnlisted.map(x => '<span style="font-size: 16px;">' + x + '</span>').join('<br>')
     ]
