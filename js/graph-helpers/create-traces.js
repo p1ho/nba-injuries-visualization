@@ -15,30 +15,33 @@ function createTraces(injuries, injuryLookup, settings) {
   }
 
   for (let injury of injuries) {
-    let injuryName = injury.injury.toLowerCase()
+    let injuryName = `<span style="font-size: 16px;">${injury.injury.toLowerCase()}</span>`
+    let injuryDate = `<span style="font-size: 10px;">(${injury.date})</span>`
+    let injuryHtmlLeft = injuryName + ' ' + injuryDate
+    let injuryHtmlRight = injuryDate + ' ' + injuryName
     let found = false
     for (let location of Object.keys(injuryLookup)) {
       if (injuryName.includes(location)) {
         if (!Array.isArray(injuryLookup[location])) {
           if (injuryName.includes('right')) {
             let xyStr = injuryLookup[location].r.join(' ')
-            accumulate(byLocation, xyStr, injuryName)
+            accumulate(byLocation, xyStr, injuryHtmlRight)
           } else if (injuryName.includes('left')) {
             let xyStr = injuryLookup[location].l.join(' ')
-            accumulate(byLocation, xyStr, injuryName)
+            accumulate(byLocation, xyStr, injuryHtmlLeft)
           } else {
-            injuriesUnlisted.push(injuryName)
+            injuriesUnlisted.push(injuryHtmlLeft)
           }
         } else {
           let xyStr = injuryLookup[location].join(' ')
-          accumulate(byLocation, xyStr, injuryName)
+          accumulate(byLocation, xyStr, injuryHtmlRight)
         }
         found = true
         break
       }
     }
     if (!found) {
-      injuriesUnlisted.push(injuryName)
+      injuriesUnlisted.push(injuryHtmlLeft)
     }
   }
 
@@ -60,7 +63,7 @@ function createTraces(injuries, injuryLookup, settings) {
     trace.x = x
     trace.y = y
     trace.text = [
-        '<span style="font-size: 16px;">'
+        '<span style="font-size: 20px;">'
         + '<br>'.repeat(injuries.length-1)
         + injuries.join('<br>')
       + '</span>'

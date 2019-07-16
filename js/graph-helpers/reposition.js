@@ -13,7 +13,7 @@
 function reposition(traces) {
 
   const originY = 2
-  const lineHeight = .1 // guestimate
+  const lineHeight = .125 // guestimate
   var limits = {
     upperLeft: originY,
     upperRight: originY,
