@@ -5,9 +5,9 @@
         "family": "Arial",
         "size": 25
       },
-      "x": "0"
+      "x": "0.96"
     },
-    "width": 850,
+    "width": 900,
     "height": 530,
     "showlegend": false,
   	"images": [{
@@ -36,7 +36,7 @@
   		"showline": false,
   		"dtick": 0.1,
   		"showticklabels": false,
-  		"range": [-2.7, 2.2]
+  		"range": [-2.2, 2.7]
   	},
   	"yaxis": {
   		"autorange": false,
@@ -59,11 +59,11 @@
     "hoverinfo": "none"
   },
   "trace-extra": {
-    "x": [-2.7],
+    "x": [2.5],
     "y": [2.7],
     "mode": "text",
     "text": ["<b>No Injuries</b>"],
-    "textposition": "bottom right",
+    "textposition": "bottom left",
     "line": { "width": 0 },
     "showlegend": false,
     "hoverinfo": "none"

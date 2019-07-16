@@ -6,25 +6,20 @@ body {
   margin: auto;
 }
 
-div.title {
-  display: flex;
-  margin: 30px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-div.title img {
-  height: 40px;
-}
-
 h1 {
-  margin: 0 10px;
-  padding: 0;
+  margin: 0;
+  padding: 1em;
+  padding-left: 30px;
   color: #006BB8;
+  background-image: url(/image/nba.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 main {
   display: flex;
-  margin: 30px;
 }
 
 #team-list {
@@ -51,7 +46,6 @@ main {
   height: 530px;
   width: 300px;
   min-width: 300px;
-  margin-right: 50px;
   overflow: auto;
 }
 
@@ -68,8 +62,12 @@ main {
   background-color: #e6f7ff;
 }
 
+#graph {
+  border: solid 1px #ccc;
+}
+
 footer {
-  margin: 30px;
+  margin-top: 20px;
   font-family: 'Open Sans', sans-serif;
 }
 
