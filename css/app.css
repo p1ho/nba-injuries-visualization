@@ -12,7 +12,7 @@ h1 {
   padding: 1em;
   padding-left: 30px;
   color: #006BB8;
-  background-image: url("https://p1ho.github.io/nba-injuries-visualization/image/nba.png");
+  background-image: url(../image/nba.png);
   background-repeat: no-repeat;
   background-position: 0;
   background-size: 20px;
