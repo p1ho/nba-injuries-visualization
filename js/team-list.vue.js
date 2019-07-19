@@ -2,7 +2,7 @@
 
 Vue.component('team-list', {
   template: `
-  <select id="team-list" @change="onChange($event)" @focus="onChange($event)" size="30">
+  <select id="team-list" @change="onChange($event)" @focus="onChange($event)" @keydown="keymonitor" size="30">
     <option v-for="(team, index) in teams"
             :value="team[0]"
             :style="{
@@ -32,6 +32,11 @@ Vue.component('team-list', {
       if (event.type === "change") { // because focus event also fires
         this.selected = event.target.value
         this.$emit('team-change', this.selected)
+      }
+    },
+    keymonitor(event) {
+      if (event.key === "ArrowRight") {
+        this.$emit('focus-player')
       }
     },
     process(obj) {

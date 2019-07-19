@@ -4,8 +4,8 @@ var vm = new Vue({
   el: '#app',
   template: `
   <main id="app">
-    <team-list ref="team-list" @team-change="updatePlayerList"></team-list>
-    <player-list ref="player-list" @regraph="regraph"></player-list>
+    <team-list ref="team-list" @team-change="updatePlayerList" @focus-player="focusPlayerList"></team-list>
+    <player-list ref="player-list" @regraph="regraph" @focus-team="focusTeamList"></player-list>
     <injury-graph ref="injury-graph"></injury-graph>
   </main>
   `,
@@ -20,6 +20,15 @@ var vm = new Vue({
     },
     regraph(payload) {
       this.$refs['injury-graph'].graph(payload)
+    },
+    focusTeamList() {
+      this.$refs['team-list'].$el.focus()
+    },
+    focusPlayerList() {
+      this.$refs['player-list'].$el.focus()
     }
+  },
+  mounted() {
+    this.focusTeamList()
   }
 })
