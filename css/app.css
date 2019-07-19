@@ -19,15 +19,20 @@ h1 {
   font-family: 'Anton', sans-serif;
 }
 
-main {
+[v-cloak] > * { display:none }
+
+main#app {
   display: flex;
+  height: 530px;
+  border: solid 1px #ccc;
+  overflow: hidden;
 }
 
 #team-list {
-  height: 530px;
   width: 250px;
   min-width: 250px;
   overflow: auto;
+  box-sizing: border-box;
 }
 
 #team-list option {
@@ -44,10 +49,10 @@ main {
 }
 
 #player-list {
-  height: 530px;
   width: 300px;
   min-width: 300px;
   overflow: auto;
+  box-sizing: border-box;
 }
 
 #player-list option {
@@ -61,10 +66,6 @@ main {
 
 #player-list option:hover {
   background-color: #e6f7ff;
-}
-
-#graph {
-  border: solid 1px #ccc;
 }
 
 footer {

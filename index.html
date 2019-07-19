@@ -8,12 +8,11 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-142162378-1');
     </script>
 
     <meta charset="utf-8">
-    <title>NBA Injuries</title>
+    <title>NBA Injuries Visualization</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
@@ -26,17 +25,13 @@
     <a href="https://github.com/p1ho/nba-injury-viz"><img width="100" height="100" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_green_007200.png?resize=300%2C300" alt="Fork me on GitHub" data-recalc-dims="1" style="position: absolute; top : 0; right: 0"></a>
     <!-- Fork Snippet end -->
     <h1>NBA Injuries Visualization</h1>
-    <main id="app">
-      <team-list ref="team-list" @team-change="updatePlayerList"></team-list>
-      <player-list ref="player-list" @regraph="regraph"></player-list>
-      <injury-graph ref="injury-graph"></injury-graph>
-    </main>
+    <main id="app" v-cloak></main>
     <script src="./js/graph-helpers/reposition.js"></script>
     <script src="./js/graph-helpers/create-traces.js"></script>
-    <script src="./js/injury-graph.js"></script>
-    <script src="./js/player-list.js"></script>
-    <script src="./js/team-list.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/injury-graph.vue.js"></script>
+    <script src="./js/player-list.vue.js"></script>
+    <script src="./js/team-list.vue.js"></script>
+    <script src="./js/app.vue.js"></script>
     <footer>
       Made by Pokuan Ho
       | Powered by <a href="https://plot.ly/javascript/">Plotly.js</a>
