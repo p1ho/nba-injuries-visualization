@@ -58,6 +58,9 @@
   },
   "trace-base": {
     "mode": "lines+markers+text",
+    "marker": {
+      "opacity": [1,0,1]
+    },
     "line": { "width": 2 },
     "showlegend": false,
     "hoverinfo": "none"

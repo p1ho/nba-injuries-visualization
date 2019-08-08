@@ -52,13 +52,15 @@ function createTraces(injuries, injuryLookup, settings) {
   for (let [locKey, injuries] of Object.entries(byLocation)) {
     let coord = locKey.split(' ')
     if (locKey.includes('-') || locKey.includes('0 ')) {
-      var x = [-.5, parseFloat(coord[0])]
+      let midPoint = (-.5 + parseFloat(coord[0]))/2
+      var x = [-.5, midPoint, parseFloat(coord[0])]
       var textPos = "center left"
     } else {
-      var x = [.5, parseFloat(coord[0])]
+      let midPoint = (.5 + parseFloat(coord[0]))/2
+      var x = [.5, midPoint, parseFloat(coord[0])]
       var textPos = "center right"
     }
-    var y = [parseFloat(coord[1]), parseFloat(coord[1])]
+    var y = [parseFloat(coord[1]), parseFloat(coord[1]), parseFloat(coord[1])]
     let trace = copy(settings['trace-base'])
     trace.x = x
     trace.y = y

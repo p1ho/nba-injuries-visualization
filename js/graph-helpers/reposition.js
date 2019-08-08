@@ -32,7 +32,7 @@ function reposition(traces) {
     let lowerBound = upperBound - blockHeight
     if (e.x[0] < 0) { // left
       if (lowerBound < limits.upperLeft) {
-        e.y[0] = limits.upperLeft + blockHeight
+        e.y[0] = e.y[1] = limits.upperLeft + blockHeight
         upperBound = e.y[0] + lineHeight / 2
         lowerBound = upperBound - blockHeight
       }
@@ -44,7 +44,7 @@ function reposition(traces) {
       }
     } else { // right
       if (lowerBound < limits.upperRight) {
-        e.y[0] = limits.upperRight + blockHeight
+        e.y[0] = e.y[1] = limits.upperRight + blockHeight
         upperBound = e.y[0] + lineHeight / 2
         lowerBound = upperBound - blockHeight
       }
@@ -68,7 +68,7 @@ function reposition(traces) {
     let lowerBound = upperBound - blockHeight
     if (e.x[0] < 0) { // left
       if (upperBound > limits.lowerLeft) {
-        e.y[0] = limits.lowerLeft - blockHeight
+        e.y[0] = e.y[1] = limits.lowerLeft - blockHeight
         upperBound = e.y[0] + lineHeight / 2
         lowerBound = upperBound - blockHeight
       }
@@ -77,7 +77,7 @@ function reposition(traces) {
       }
     } else { // right
       if (upperBound > limits.lowerRight) {
-        e.y[0] = limits.lowerRight - blockHeight
+        e.y[0] = e.y[1] = limits.lowerRight - blockHeight
         upperBound = e.y[0] + lineHeight / 2
         lowerBound = upperBound - blockHeight
       }
