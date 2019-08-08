@@ -4,7 +4,8 @@ Vue.component('player-list', {
   template: `
   <select id="player-list" @change="onChange($event)" @keydown="keymonitor" size="30">
     <option v-for="(player, index) in players"
-            :value="player[0]"
+            :value="index"
+            :id="player"
             :style="{
               'background-image': 'url(' + player[1].image + ')'
             }" v-bind:selected="index === 0 ? 'selected' : false">
@@ -18,6 +19,7 @@ Vue.component('player-list', {
       team: undefined,
       players: [],
       selected: undefined,
+      index: 0,
       updatePending: false,
     }
   },
@@ -37,14 +39,15 @@ Vue.component('player-list', {
       this.team = team
       if (this.database !== undefined) {
         this.players = Object.entries(this.database['teams'][this.team])
-        this.selected = this.players[0][0]
+        this.selected = this.players[+this.index][0]
         this.$emit('regraph', this.database['teams'][this.team][this.selected])
       } else {
         this.updatePending = true
       }
     },
     onChange(event) {
-      this.selected = event.target.value
+      this.index = +event.target.value
+      this.selected = this.players[+this.index][0]
       this.$emit('regraph', this.database['teams'][this.team][this.selected])
     },
     keymonitor(event) {
